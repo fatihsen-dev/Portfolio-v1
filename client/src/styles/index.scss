@@ -1,0 +1,168 @@
+@import url("./reset.css");
+@import url("./tailwind.css");
+
+.popupMenu {
+   @apply absolute w-full h-full dark:bg-black/20 bg-black/5 flex justify-center z-10 items-start pointer-events-none opacity-0 px-0 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-0;
+
+   & > div {
+      @apply 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 mt-0 flex flex-col bg-white dark:bg-darkv4 rounded py-6 px-10 -translate-y-5 transition-transform w-full 2xl:w-auto xl:w-auto lg:w-auto md:w-full sm:w-full overflow-auto h-full 2xl:h-auto xl:h-auto lg:h-auto md:h-auto sm:h-full;
+
+      & > div {
+         @apply flex flex-col gap-2 pt-5;
+
+         &:nth-of-type(1) {
+            @apply pt-0;
+         }
+         &:nth-of-type(2) {
+            @apply pt-0;
+         }
+         & > span {
+            @apply text-white/80;
+         }
+         & > ul {
+            @apply grid grid-cols-1 gap-3 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
+
+            & > a {
+               @apply flex items-center gap-2 bg-light dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
+
+               & > svg {
+                  @apply text-xl;
+               }
+               & > span {
+                  @apply text-[16px] font-medium;
+               }
+            }
+            & > button {
+               @apply flex items-center gap-2 bg-light dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
+
+               & > svg {
+                  @apply text-xl;
+               }
+               & > span {
+                  @apply text-[16px] font-medium;
+               }
+            }
+         }
+      }
+   }
+}
+.circle {
+   @apply absolute grid place-items-center border-2 dark:border-darkv3;
+
+   & > .lang-icon-bg {
+      @apply absolute rounded-full grid place-items-center;
+   }
+}
+
+.circle4 {
+   @apply w-[480px] h-[480px] rounded-full;
+   animation: circle1Animate 20s linear infinite;
+   .lang-icon-bg {
+      @apply w-[65px] h-[65px];
+   }
+   & > .lang-icon-bg:nth-of-type(1) {
+      @apply -top-8 bg-reactjsColor/20 dark:bg-reactjsColor/10;
+   }
+   & > .lang-icon-bg:nth-of-type(2) {
+      @apply left-9 bottom-9 dark:bg-nodejsColor/10 bg-nodejsColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(3) {
+      @apply right-9 bottom-9 dark:bg-mongodbColor/10 bg-mongodbColor/20;
+
+      & > img {
+         @apply relative left-[2px];
+      }
+   }
+}
+.circle3 {
+   @apply w-[360px] h-[360px] rounded-full rotate-45;
+   animation: circle2Animate 15s linear infinite;
+
+   .lang-icon-bg {
+      @apply -rotate-45 w-[55px] h-[55px];
+   }
+
+   & > .lang-icon-bg:nth-of-type(1) {
+      @apply -top-7 dark:bg-sassColor/10 bg-sassColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(2) {
+      @apply left-6 bottom-6 dark:bg-tailwindColor/10 bg-tailwindColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(3) {
+      @apply right-6 bottom-6 dark:bg-bootstrapColor/10 bg-bootstrapColor/20;
+   }
+}
+.circle2 {
+   @apply w-[240px] h-[240px] rounded-full;
+   animation: circle1Animate 11s linear infinite;
+
+   .lang-icon-bg {
+      @apply -rotate-45 w-[50px] h-[50px];
+   }
+   & > .lang-icon-bg:nth-of-type(1) {
+      @apply -top-6 dark:bg-gitColor/10 bg-gitColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(2) {
+      @apply left-2 bottom-2  dark:bg-githubColor/30 bg-githubColor/10;
+   }
+   & > .lang-icon-bg:nth-of-type(3) {
+      @apply right-2 bottom-2 dark:bg-stackColor/10 bg-stackColor/20;
+   }
+}
+.circle1 {
+   @apply w-[120px] h-[120px] rounded-full rotate-45;
+   animation: circle2Animate 8s linear infinite;
+
+   .lang-icon-bg {
+      @apply -rotate-45 w-[40px] h-[40px];
+   }
+
+   & > .lang-icon-bg:nth-of-type(1) {
+      @apply -top-5 dark:bg-cssColor/10 bg-cssColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(2) {
+      @apply -left-1 -bottom-1 dark:bg-htmlColor/10 bg-htmlColor/20;
+   }
+   & > .lang-icon-bg:nth-of-type(3) {
+      @apply -right-1 -bottom-1 dark:bg-jsColor/10 bg-jsColor/20;
+
+      & > img {
+         @apply w-[23px] h-[23px];
+      }
+   }
+}
+.repositories-list{
+
+   & > li{
+      @apply shadow-md min-h-[140px]
+   }
+}
+
+@keyframes circle1Animate {
+   from {
+      transform: rotate(0);
+   }
+   to {
+      transform: rotate(360deg);
+   }
+}
+@keyframes circle2Animate {
+   from {
+      transform: rotate(45deg);
+   }
+   to {
+      transform: rotate(405deg);
+   }
+}
+
+::-webkit-scrollbar {
+   @apply w-2
+}
+
+::-webkit-scrollbar-track {
+   @apply bg-darkv1
+}
+
+::-webkit-scrollbar-thumb {
+   @apply bg-darkv2 rounded
+}
