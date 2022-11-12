@@ -7,11 +7,12 @@ module.exports = {
       colors: {
         darkv1: "#111111",
         darkv2: "#0D0D0D",
-        darkv3: "#222222",
+        darkv3: "#151515",
         darkv4: "#151515",
         darkv5: "#0F0F0F",
-        light: "#F4F4F4",
-        grayText: "#BBBBBB",
+        lightv1: "#FFFFFF",
+        lightv2: "#f8f8f8",
+        lightv3: "#f5f5f5",
 
         //lang icon colors
         htmlColor: "#e34c26",

@@ -20,7 +20,7 @@ export function MenuPopup() {
       className="popupMenu overflow-hidden"
     >
       <div style={menuStatus ? { transform: "translateY(0)" } : {}}>
-        <div className="flex items-end">
+        <div className="flex items-end dark:text-lightv1">
           <MdOutlineClose
             onClick={() => dispatch(menuActiveAction())}
             className="text-2xl cursor-pointer"
@@ -77,7 +77,7 @@ export function MenuPopup() {
         <div>
           <span>Daha Fazla</span>
           <ul>
-            <a target="_blank" href="https://www.buymeacoffee.com/fatihydrm">
+            <a target="_blank" href="https://www.buymeacoffee.com/fatihsen">
               <BiCoffeeTogo />
               <span>Kahve ısmarla</span>
             </a>

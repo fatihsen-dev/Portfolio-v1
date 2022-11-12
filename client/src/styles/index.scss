@@ -2,7 +2,7 @@
 @import url("./tailwind.css");
 
 .popupMenu {
-   @apply absolute w-full h-full dark:bg-black/20 bg-black/5 flex justify-center z-10 items-start pointer-events-none opacity-0 px-0 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-0;
+   @apply absolute w-full h-full dark:text-lightv1 dark:bg-black/20 bg-black/5 flex justify-center z-10 items-start pointer-events-none opacity-0 px-0 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-0;
 
    & > div {
       @apply 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 mt-0 flex flex-col bg-white dark:bg-darkv4 rounded py-6 px-10 -translate-y-5 transition-transform w-full 2xl:w-auto xl:w-auto lg:w-auto md:w-full sm:w-full overflow-auto h-full 2xl:h-auto xl:h-auto lg:h-auto md:h-auto sm:h-full;
@@ -23,7 +23,7 @@
             @apply grid grid-cols-1 gap-3 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
 
             & > a {
-               @apply flex items-center gap-2 bg-light dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
+               @apply flex items-center gap-2 bg-lightv2 dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
 
                & > svg {
                   @apply text-xl;
@@ -33,7 +33,7 @@
                }
             }
             & > button {
-               @apply flex items-center gap-2 bg-light dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
+               @apply flex items-center gap-2 bg-lightv2 dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
 
                & > svg {
                   @apply text-xl;
@@ -137,6 +137,10 @@
       @apply shadow-md min-h-[140px]
    }
 }
+.sidebar-category-items {
+   @apply px-2 py-0.5 bg-darkv1 text-sm rounded-sm border-2 dark:border-darkv2
+}
+
 
 @keyframes circle1Animate {
    from {
@@ -160,9 +164,9 @@
 }
 
 ::-webkit-scrollbar-track {
-   @apply bg-darkv1
+   @apply dark:bg-darkv1 bg-[#eeeeee]
 }
 
 ::-webkit-scrollbar-thumb {
-   @apply bg-darkv2 rounded
+   @apply dark:bg-darkv2 rounded-sm bg-[#bbbbbb]
 }

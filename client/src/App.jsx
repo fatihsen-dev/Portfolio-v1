@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { MenuPopup } from "./components/MenuPopup";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
-import { Blogs } from "./pages/Blogs";
+import { Blogs } from "./pages/blog/Blogs";
 import { Projects } from "./pages/Projects";
 import Login from "./pages/admin/Login";
 import { Repositories } from "./pages/repositories/Repositories";
@@ -28,7 +28,7 @@ function App() {
     <div className="h-full flex flex-col dark:bg-darkv4 dark:text-light bg-light text-darkv1">
       <Navbar />
       <MenuPopup />
-      <div className="h-full overflow-auto">
+      <div className="h-full overflow-auto bg-lightv3 dark:bg-darkv2">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs" element={<Blogs />} />

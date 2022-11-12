@@ -11,7 +11,7 @@ export function Navbar() {
   const dispatch = useDispatch();
 
   return (
-    <div className="bg-dark w-full dark:bg-darkv5 dark:text-light bg-white text-darkv1 px-3 2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-3">
+    <div className="bg-lightv2 w-full dark:bg-darkv5 dark:text-lightv2 bg-lightv2 text-darkv1 px-3 2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-3">
       <div className="container mx-auto flex justify-between py-3 select-none gap-10">
         <h2 className="text-2xl font-bold dark:font-semibold whitespace-nowrap">
           <NavLink to="/">Fatih Şen</NavLink>
@@ -45,13 +45,13 @@ export function Navbar() {
         <ul className="flex items-center gap-3 text-[22px]">
           <li
             onClick={() => dispatch(menuActiveAction())}
-            className="cursor-pointer bg-light text-darkv3 dark:text-light p-1.5 dark:bg-darkv3 grid place-items-center rounded-full"
+            className="cursor-pointer  bg-lightv2 text-darkv3 dark:text-lightv2 p-1.5 dark:bg-darkv3 grid place-items-center rounded-full"
           >
             <MdOutlineMenu />
           </li>
           <li
             onClick={() => dispatch(darkHandle())}
-            className="cursor-pointer bg-light text-darkv3 dark:text-light p-1.5 dark:bg-darkv3 grid place-items-center rounded-full"
+            className="cursor-pointer bg-lightv2 text-darkv3 dark:text-lightv2 p-1.5 dark:bg-darkv3 grid place-items-center rounded-full"
           >
             {darkStatus === "true" ? <BiSun /> : <HiOutlineMoon />}
           </li>
