@@ -8,7 +8,7 @@ export function Blogs() {
       <Helmet>
         <title>Blog - Fatih Şen</title>
       </Helmet>
-      <div className="container mx-auto flex py-10">
+      <div className="container mx-auto flex py-10 h-full">
         <Main />
         <Sidebar />
       </div>

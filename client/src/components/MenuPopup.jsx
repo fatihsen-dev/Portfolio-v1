@@ -90,10 +90,10 @@ export function MenuPopup() {
               {darkStatus === "true" ? <BiSun /> : <HiOutlineMoon />}
               <span>Açık Mod</span>
             </button>
-            <button>
-              <TbWorld />
-              <span>English</span>
-            </button>
+            {/*<button>*/}
+            {/*  <TbWorld />*/}
+            {/*  <span>English</span>*/}
+            {/*</button>*/}
           </ul>
         </div>
       </div>

@@ -23,7 +23,7 @@
             @apply grid grid-cols-1 gap-3 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2;
 
             & > a {
-               @apply flex items-center gap-2 bg-lightv2 dark:bg-darkv1 py-1.5 px-3 rounded pr-14;
+               @apply flex items-center gap-2 bg-lightv2 dark:bg-darkv1 py-1.5 px-3 rounded pr-14 whitespace-nowrap ;
 
                & > svg {
                   @apply text-xl;
@@ -138,7 +138,7 @@
    }
 }
 .sidebar-category-items {
-   @apply px-2 py-0.5 bg-darkv1 text-sm rounded-sm border-2 dark:border-darkv2
+   @apply px-2 py-0.5 bg-darkv1 text-sm rounded-sm border-2 dark:border-darkv2 cursor-pointer
 }
 
 
