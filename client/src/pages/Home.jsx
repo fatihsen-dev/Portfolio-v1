@@ -19,7 +19,7 @@ export function Home() {
             Merhaba ben Fatih, Türkiye'de yaşıyorum ve Front-end developerim. Şu
             anda kendimi Full-Stack alanında geliştiriyorum, öğrenmeyi ve
             araştırmayı seviyorum. Boş zamanlarımda oyun oynamayı ve diğer
-            geliştiriciler ile bilgi alış verişi yapmayı seviyorum.
+            geliştiriciler ile bilgi alışverişi yapmayı seviyorum.
           </span>
         </div>
       </div>
