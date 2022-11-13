@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Routes, Route } from "react-router-dom";
 import { MenuPopup } from "./components/MenuPopup";
 import { Navbar } from "./components/Navbar";
@@ -10,9 +10,11 @@ import Login from "./pages/admin/Login";
 import { Repositories } from "./pages/repositories/Repositories";
 import { NotFound } from "./pages/NotFound";
 import { Dashboard } from "./pages/admin/Dashboard";
+import { darkHandle } from "./store/siteReducer";
 
 function App() {
   const { darkStatus } = useSelector((state) => state.site);
+  const discpatch = useDispatch();
 
   useEffect(() => {
     if (darkStatus === "true") {

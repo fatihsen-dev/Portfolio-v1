@@ -68,7 +68,7 @@ export function MenuPopup() {
               <AiFillInstagram />
               <span>Instagram</span>
             </a>
-            <a target="_blank" href="https://twitter.com/fatihydrmm">
+            <a target="_blank" href="https://twitter.com/fatihsendev">
               <AiOutlineTwitter />
               <span>Twitter</span>
             </a>
