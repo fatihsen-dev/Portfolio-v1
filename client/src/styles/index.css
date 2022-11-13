@@ -127,7 +127,7 @@
 }
 
 .sidebar-category-items {
-   @apply px-2 py-0.5 bg-darkv1 text-sm rounded-sm border-2 dark:border-darkv2 cursor-pointer;
+   @apply px-2 py-0.5 bg-lightv2 font-medium dark:text-lightv1 text-darkv1/90 dark:bg-darkv1 text-sm rounded-sm border-2 dark:border-darkv2 cursor-pointer;
 }
 
 @keyframes circle1Animate {

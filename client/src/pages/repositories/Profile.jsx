@@ -29,8 +29,10 @@ export function Profile() {
           <span className="2xl:text-2xl xl:text-2xl lg:text-2xl md:text-2xl sm:text-xl text-xl dark:text-lightv1 font-medium ">
             {name}
           </span>
-          <span className="text-lg opacity-60 font-medium">{bio}</span>
-          <span className="mt-auto text-lg opacity-60 font-medium">
+          <span className="text-base opacity-60 font-medium 2xl:text-lg xl:text-lg lg:text-lg md:text-lg sm:text-base">
+            {bio}
+          </span>
+          <span className="mt-auto 2xl:text-lg xl:text-lg lg:text-lg md:text-lg sm:text-base opacity-60 font-medium">
             {location}
           </span>
         </div>
