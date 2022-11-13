@@ -13,6 +13,8 @@ module.exports = {
         lightv1: "#FFFFFF",
         lightv2: "#f8f8f8",
         lightv3: "#f5f5f5",
+        lightv4: "#eeeeee",
+        lightv5: "#dddddd",
 
         //lang icon colors
         htmlColor: "#e34c26",

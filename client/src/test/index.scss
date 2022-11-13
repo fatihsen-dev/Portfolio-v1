@@ -1,5 +1,5 @@
-@import url("./reset.css");
-@import url("./tailwind.css");
+@import url("../styles/reset.css");
+@import url("../styles/tailwind.css");
 
 .popupMenu {
    @apply absolute w-full h-full dark:text-lightv1 dark:bg-black/20 bg-black/5 flex justify-center z-10 items-start pointer-events-none opacity-0 px-0 2xl:px-0 xl:px-0 lg:px-0 md:px-10 sm:px-0;
@@ -164,9 +164,9 @@
 }
 
 ::-webkit-scrollbar-track {
-   @apply dark:bg-darkv1 bg-[#eeeeee]
+   @apply dark:bg-darkv1 bg-lightv4
 }
 
 ::-webkit-scrollbar-thumb {
-   @apply dark:bg-darkv2 rounded-sm bg-[#bbbbbb]
+   @apply dark:bg-darkv2 rounded-sm bg-lightv5
 }

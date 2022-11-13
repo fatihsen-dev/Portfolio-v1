@@ -8,14 +8,14 @@ import { Toaster } from "react-hot-toast";
 import { Provider } from "react-redux";
 import { store } from "./store";
 // css
-import "./styles/index.scss";
+import "./styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-   <Provider store={store}>
-      <BrowserRouter>
-         <App />
-         <Toaster position='top-left' reverseOrder={false} />
-      </BrowserRouter>
-   </Provider>
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+      <Toaster position="top-left" reverseOrder={false} />
+    </BrowserRouter>
+  </Provider>
 );
