@@ -31,7 +31,7 @@ export function Repositories() {
           ...headers,
           authorization: token
             ? `Bearer ${token}`
-            : "Bearer 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",
+            : "Bearer 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",
         },
       };
     });
