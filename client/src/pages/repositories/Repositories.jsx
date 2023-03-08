@@ -59,7 +59,7 @@ export function Repositories() {
               following {
                 totalCount
               }
-              repositories(first: 20) {
+              repositories(first: 40) {
                 nodes {
                   name
                   stargazerCount
